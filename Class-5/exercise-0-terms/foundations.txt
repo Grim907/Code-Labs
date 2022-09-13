@@ -1,0 +1,4 @@
+A data type is a classification of data which tells how its suppose to be used
+Operators are used to modify and return a result
+Conditional statements are a feature that tell the computer to execute something
+Loops are is a instruction that is repeated until a condition is reached
