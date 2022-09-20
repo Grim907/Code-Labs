@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { padding: 30px;}
+        .text-gaint { font-size: 40px;}
+    </style>
+</head>
+<body>
+    <h2>How much do pies cost?</h2>
+
+    <form >
+        <div class="form-group">
+            <label for="price"></label>
+            <input type="text" name="price" value="30">
+        </div>
+    <div class="form-group">
+        <label for="quantity">Quantity
+
+            <span class="label quantity-Label">1</span>
+        </label><input type="range" class="form-control" name="quantity" value="1" min="1" max="10" step="1"></div>
+    </form>
+    <div class="text-right text-gaint total"></div>
+ <script>
+     const priceInput = document.querySelector('[name=price]')
+     const quantityInput = document.querySelector('[name=quantity]')
+     const total = document.querySelector('.total')
+     const quantityLabel = document.querySelector('.quantity-label')
+         function calculatePieCost() {
+         const price = priceinput.value
+         const quantity = quantityInput.value
+         const cost = price * quantity
+         console.log(cost)
+         cost.innerText =  '$' + cost.toFixed(2)
+        }
+        function updateQuantityLabel () {
+         const quantity = quantityInpu.value
+        }
+     
+     calculatePieCost()
+
+
+
+     priceInput.addEventListener('input', calculatePieCost)
+     quantityInput.addEventListener('input', calculatePieCost)
+     quantityInput.addEventListener('input', updateQuantityLabel)
+ </script>
+</body>
+</html>
