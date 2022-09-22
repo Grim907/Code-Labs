@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+
+    <script>
+        document.getElementById("clickMe").onclick = doFunction;
+         
+        var el = document.getElementById("clickMe");
+if (el.addEventListener)
+    el.addEventListener("click", doFunction, false);
+else if (el.attachEvent)
+    el.attachEvent('onclick', doFunction);
+    </script>
+</body>
+</html>

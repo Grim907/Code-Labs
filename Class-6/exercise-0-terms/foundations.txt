@@ -1,0 +1,3 @@
+In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example.
+A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output.
+JavaScript also has four built-in objects: Array, Date, Math, and String
